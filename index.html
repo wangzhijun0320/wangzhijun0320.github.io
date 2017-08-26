@@ -297,6 +297,138 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JAVA-study-nodes3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/25/JAVA-study-nodes3/" itemprop="url">JAVA study nodes3</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T22:09:29+08:00">
+                2017-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Chapter4认识对象"><a href="#Chapter4认识对象" class="headerlink" title="Chapter4认识对象"></a>Chapter4认识对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><h3 id="4-1-1定义类"><a href="#4-1-1定义类" class="headerlink" title="4.1.1定义类"></a>4.1.1定义类</h3><pre><code>例子：类名  text=new  类名（）；【有图有真相】
+</code></pre><p>只有有一个类定义，编译程序就是产生一个.class文件。<br>如果想在建立对象时，一并进行某个初始流程，像是指定数据成员值，则可以定义构造函数。</p>
+<h3 id="4-1-2使用标准类"><a href="#4-1-2使用标准类" class="headerlink" title="4.1.2使用标准类"></a>4.1.2使用标准类</h3><p>1  使用java.util.Scanner<br>如果直接取得上一个字符串（以空格或换行分隔），则使用next()；如果想取得用户输入的正行文字，则使用nextLine()（以换行分割）<br>2  使用java.math.BigDecimal<br>Java遵从IEEE754浮点数运算规范，使用分数与指数来表示浮点数。由于浮点数误差的关系，就要小心浮点数，不要用==直接比较浮点数的运算结果。<br>怎么解决这种问题，可以使用java.util.BigDecimal。这个类还提供了plus()，substract(),multiply(),divids()等方法。</p>
+<h3 id="4-1-3-对象指定与相等性"><a href="#4-1-3-对象指定与相等性" class="headerlink" title="4.1.3 对象指定与相等性"></a>4.1.3 对象指定与相等性</h3><p>Java并非完全的面向对象的程序语言，在Java中有两大类型系统，基本类型和类类型。<br>如果在操作对象，=是用在指定参考名称参考某个对象，而==是用在比较两个参考名称是否参考用一个对象。通俗的说就是，=是用在将某个名牌绑定到某个对象，而==是用在比较两个名牌是否绑定到了同一个对象。【.equals()可以自行定义如何比较两个对象的内含值】</p>
+<h2 id="4-2基本类型打包器"><a href="#4-2基本类型打包器" class="headerlink" title="4.2基本类型打包器"></a>4.2基本类型打包器</h2><h3 id="4-2-1打包基本类型"><a href="#4-2-1打包基本类型" class="headerlink" title="4.2.1打包基本类型"></a>4.2.1打包基本类型</h3><p>Long、Integer、Double、Float、Boolean等类都是所谓的打包器，正如此名称所示，这些类主要目的就是提供对象实例座位“壳”，将基本类型打包在对象之中，这样就可以操作这个对象。<br>如果要使用Integer打包int类型数据，方法之一就是使用new创建Integer实例时，传入int类型数据。</p>
+<h3 id="4-2-2自动装箱、拆箱"><a href="#4-2-2自动装箱、拆箱" class="headerlink" title="4.2.2自动装箱、拆箱"></a>4.2.2自动装箱、拆箱</h3><p>除了使用new关键字创建基本类型打包器外，从j2SE5.0之后提供了自动装箱和自动拆箱功能，可以这样打包基本类型：Integer num=10;//自动装箱  int foo=num;//自动拆箱。</p>
+<h3 id="4-2-3-自动装箱，自动拆箱的内幕"><a href="#4-2-3-自动装箱，自动拆箱的内幕" class="headerlink" title="4.2.3 自动装箱，自动拆箱的内幕"></a>4.2.3 自动装箱，自动拆箱的内幕</h3><p>自动装箱和自动拆箱实际上是编译程序蜜糖，Integer num=100;编译程序会自动将程序代码展开为：Integer localInteger=Integer.valueOf(100);valueof()的操作数在-128~127中间。所以当Integer i1=200;Integer i2=200;时，i1和i2不会参考同一个实例，所以用==比较就会显示false。用.equals()比较内容是否相等。</p>
+<h2 id="4-3数组对象"><a href="#4-3数组对象" class="headerlink" title="4.3数组对象"></a>4.3数组对象</h2><h3 id="4-3-1数组基础"><a href="#4-3-1数组基础" class="headerlink" title="4.3.1数组基础"></a>4.3.1数组基础</h3><p>数组在Java中就是对象。</p>
+<h3 id="4-3-2操作数组对象"><a href="#4-3-2操作数组对象" class="headerlink" title="4.3.2操作数组对象"></a>4.3.2操作数组对象</h3><p>int[] scores=new int[10];在Java中看到new，一定是建立对象，这个语法代表了数组就是对象。每个数据类型的数组元素都有初始值，如果默认的初始值不符合你的要求，则可以通过java.util.Arrays的fill()方法来设定数组的元素值。<br>如果想在new数组中一并指定初始值，则可以不必指定数组长度，int[] scores=new int[]{45,234,24,34,32};<br>数组既然是对象，对象时根据类而建立的实例，代表建立数组对象定义在哪儿？ 答案是由JVM动态产生。<br>类类型建立的数组：Integer scores=new Integer[3];那么这个程序片段建立了几个Integer对象呢？是0个。因为如果是类类型，这个片段的写法建立的数组，每个索引都是参考至null。</p>
+<h3 id="4-3-3数组复制"><a href="#4-3-3数组复制" class="headerlink" title="4.3.3数组复制"></a>4.3.3数组复制</h3><p>如果想进行数组复制，基本做法就是另行建立新数组，使用System.arraycopy()方法，有五个参数，分别是来源数组、来源起始索引、目标数组、目标起始索引、复制长度。还可以使用Arrays.copyOf()方法，这个方法有两个参数，分别是目标对象，目标对象长度。</p>
+<h2 id="4-4字符串对象"><a href="#4-4字符串对象" class="headerlink" title="4.4字符串对象"></a>4.4字符串对象</h2><h3 id="4-4-1字符串基础"><a href="#4-4-1字符串基础" class="headerlink" title="4.4.1字符串基础"></a>4.4.1字符串基础</h3><p>如果有一个char[]数组，也可以使用new来创建String实例，例如：<br>char[] cs={‘h’,’e’,’l’,’l’,’o’};<br>String name=new String(cs);<br>如果有必要，也可以使用String的toCharArray()方法，将字符串以char[]数组返回。<br>char[] cs2=name.toCharArray();<br>如果要将字符串转换为整数，浮点数等基本类型，可以使用打包类提供的剖析方法。</p>
+<h3 id="4-4-2字符串特性"><a href="#4-4-2字符串特性" class="headerlink" title="4.4.2字符串特性"></a>4.4.2字符串特性</h3><p>以“”包含的字符串，只要内容相同，无论在程序代码中出现几次，JVM都只会建立一个String实例，并在字符串池中维护。</p>
+<h3 id="4-4-3字符串编码"><a href="#4-4-3字符串编码" class="headerlink" title="4.4.3字符串编码"></a>4.4.3字符串编码</h3><p>在windows默认的纯文本编辑器，应该是GB2312编码。在eclipse中建立.java原始码，在eclipse运行在简体中文windows中，默认应该是GB2312编码。然而写下的字符串在JVM中会是Unicode。</p>
+<h2 id="4-5-查询java-api文件"><a href="#4-5-查询java-api文件" class="headerlink" title="4.5 查询java api文件"></a>4.5 查询java api文件</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/24/JAVA-study-nodes2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -964,7 +1096,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
