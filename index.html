@@ -297,6 +297,136 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/27/JAVA-study-node4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/27/JAVA-study-node4/" itemprop="url">JAVA study node4</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-27T21:01:57+08:00">
+                2017-08-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Chapter5对象封装"><a href="#Chapter5对象封装" class="headerlink" title="Chapter5对象封装"></a>Chapter5对象封装</h1><h2 id="5-1何为封装"><a href="#5-1何为封装" class="headerlink" title="5.1何为封装"></a>5.1何为封装</h2><h3 id="5-1-1封装对象初始流程"><a href="#5-1-1封装对象初始流程" class="headerlink" title="5.1.1封装对象初始流程"></a>5.1.1封装对象初始流程</h3><p>如果想存取对象的数据成员，可以通过“.”运算符加上数据成员名称。（在程序中出现重复的流程，往往意味着有改进的空间）<br>在对象数据成员前面加上this关键字，表明将参数指定给这个对象（this）的数据成员。</p>
+<h3 id="5-1-2封装对象操作流程"><a href="#5-1-2封装对象操作流程" class="headerlink" title="5.1.2封装对象操作流程"></a>5.1.2封装对象操作流程</h3><p>在类中定义的方法，如果不用返回值，方法名前面可以声明为void。<br>前面的重复流程，现在都封装到方法中，这么做的好处事使用时简单。</p>
+<h3 id="5-1-3封装对象内部数据"><a href="#5-1-3封装对象内部数据" class="headerlink" title="5.1.3封装对象内部数据"></a>5.1.3封装对象内部数据</h3><p>如果不想让用户看到的数据成员，可以用private声明，并提供取值方法。封装的目的主要是隐蔽对象细节，将对象当作黑箱进行操作。</p>
+<h2 id="5-2类语法细节"><a href="#5-2类语法细节" class="headerlink" title="5.2类语法细节"></a>5.2类语法细节</h2><h3 id="5-2-1public-权限修饰"><a href="#5-2-1public-权限修饰" class="headerlink" title="5.2.1public 权限修饰"></a>5.2.1public 权限修饰</h3><p>如果想要其他包的类的类程序代码中存取某包的类或对象成员，则该类或对象成员必须是公开成员，在Java中要使用public加以声明。<br>可以把类声明为public，这表明它是一个公开类，可以在其他包的类中使用。<br>可以在构造函数上声明为public，这表示其他包中的类可以直接调用这个方法。<br>可以在方法上声明public，这表示其他包中的方法中可以直接调用这个方法。</p>
+<h3 id="5-2-2关于构造函数"><a href="#5-2-2关于构造函数" class="headerlink" title="5.2.2关于构造函数"></a>5.2.2关于构造函数</h3><p>创建对象时，数据成员就会初始化。<br>只有编译程序自动加入的构造函数名，才称为默认的构造函数，如果自行撰写无参数，没有内容的构造函数，就不称为默认的构造函数了。</p>
+<h3 id="5-2-3构造函数与方法重载"><a href="#5-2-3构造函数与方法重载" class="headerlink" title="5.2.3构造函数与方法重载"></a>5.2.3构造函数与方法重载</h3><p>可以定义多个构造函数，只要参数类型或个数不同，这称为重载构造函数。定义方法时也可以进行重载，可以类似功能的方法提供同一名称，但是根据参数类型和个数的不同调用对象的方法。<br>返回值类型不可作为方法重载依据，编译程序时会出错。</p>
+<p>###5.2.4使用this<br>除了被声明为static的地方外，this关键字可以出现在类中的任何地方。在Java中，this()代表了调用另一个已经定义的构造方法。<br>在创建对象之后，调用构造函数之前，若有想执行的流程，可以使用{}定义。<br>final关键字，如果局部变量声明了final，表示设置后就不能再变动，但是如果没有明确使用=指定值，那么表示延迟对象成员值得指定，在构造函数执行流程中，一定要对该数据成员指定值得动作，否则将编译错误。</p>
+<h3 id="5-2-5-static类成员"><a href="#5-2-5-static类成员" class="headerlink" title="5.2.5 static类成员"></a>5.2.5 static类成员</h3><p>被声明为static的成员，是将类名称作为命名空间。也就是说，可以用类名.成员来获取成语。所以根据习惯，首字母大写就是类，类名称加上“.”运算符直接调用的就是static成员。<br>由于static成员属于类，而非个别对象，所以在static成员中使用this会是一种语义上的错误。<br>在static方法或者区域块中，可以使用static数据成员或方法成员。<br>如果有些动作想在位码加载后执行，则可以定义static区块。</p>
+<h3 id="5-2-6不定长度自变量"><a href="#5-2-6不定长度自变量" class="headerlink" title="5.2.6不定长度自变量"></a>5.2.6不定长度自变量</h3><p>声明参数列是要在类型关键字后加上…。使用不定长度自变量时，方法上声明的不定长度参数必须是参数列的最后一个。<br>使用两个以上不定长度自变量也是不合法的。</p>
+<h3 id="5-2-7内部类"><a href="#5-2-7内部类" class="headerlink" title="5.2.7内部类"></a>5.2.7内部类</h3><p>可以在类中定义类，这称为内部类。要使用内部类时，必须先建立外部类的实例。</p>
+<h3 id="5-2-8传值调用"><a href="#5-2-8传值调用" class="headerlink" title="5.2.8传值调用"></a>5.2.8传值调用</h3><p>Java当中只有传值调用。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JAVA-study-nodes3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1096,7 +1226,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
