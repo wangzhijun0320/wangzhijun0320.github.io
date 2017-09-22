@@ -297,6 +297,130 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/22/learning-Demo01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/22/learning-Demo01/" itemprop="url">learning Demo01</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T21:08:42+08:00">
+                2017-09-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Learning"><a href="#Learning" class="headerlink" title="Learning"></a>Learning</h1><h2 id="1111111000000011111100000"><a href="#1111111000000011111100000" class="headerlink" title="1111111000000011111100000"></a>1111111000000011111100000</h2><p>Math.abs()是取得abs中的数的绝对值。</p>
+<p>1111111111java.util.Random.nextInt()方法<br>nextInt(int n)方法用于从这个随机数生成器的序列中获取伪随机，均匀分布的Int值，介于0（含）和指定值（排除）之间。</p>
+<p>00000000在Math类中也有一个random方法，该random方法的工作是生成一个[0,1.0)区间的随机小数。通过阅读Math类的源代码可以发现，Math类中的random方法就是直接调用Random类中的nextDouble方法实现的。只是random方法的调用比较简单，所以很多程序员都习惯使用Math类的random方法来生成随机数字。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">double d = Math.random()*(totalMoney/n);</div></pre></td></tr></table></figure></p>
+<p>1111111<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">import java.math.BigDecimal;</div><div class="line">double d=Math.random()*(totalMoney/n);</div><div class="line">BigDecimal b=new BigDecimal(d);</div><div class="line">double x=b.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();</div></pre></td></tr></table></figure></p>
+<p>000000洗牌程序</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/04/Learning/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -316,7 +440,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/09/04/Learning/" itemprop="url">Learning</a></h1>
+                <a class="post-title-link" href="/2017/09/04/Learning/" itemprop="url">数据类型和运算符</a></h1>
         
 
         <div class="post-meta">
@@ -368,8 +492,7 @@
       
         
           
-            <h1 id="Learning"><a href="#Learning" class="headerlink" title="Learning"></a>Learning</h1><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>java.util.Random.nextInt()方法<br>nextInt(int n)方法用于从这个随机数生成器的序列中获取伪随机，均匀分布的Int值，介于0（含）和指定值（排除）之间。<br>Math.abs()是取得abs中的数的绝对值。</p>
-<h1 id="第三章-数据类型和运算符"><a href="#第三章-数据类型和运算符" class="headerlink" title="第三章   数据类型和运算符"></a>第三章   数据类型和运算符</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>使用标识符作为变量，对象的名字。<br>标识符的规范：1可以又数字，字母，下划线，和美元符$组成，其中数字不能开头2标识符不能为Java的关键字和保留字，但是可以包含关键字和保留字3标识符不能包含空格4标识符只能包含美元符$不能包含别的符号</p>
+            <h1 id="第三章-数据类型和运算符"><a href="#第三章-数据类型和运算符" class="headerlink" title="第三章   数据类型和运算符"></a>第三章   数据类型和运算符</h1><h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h2><p>使用标识符作为变量，对象的名字。<br>标识符的规范：1可以又数字，字母，下划线，和美元符$组成，其中数字不能开头2标识符不能为Java的关键字和保留字，但是可以包含关键字和保留字3标识符不能包含空格4标识符只能包含美元符$不能包含别的符号</p>
 <p>##Java关键字<br>关键字都是小写的，abstract,assert,break,byte,case,catch,<br>char,class,const,continue,default,double,do,else,enum,final,<br>finally,float,for,if,goto,implements,import,instanceof,int,<br>interface,long,native,new,package,private,protected,public,<br>return,short,static,stricyfp,super,swing,synchronized,this,<br>throw,transient,try,void,volatile,while.</p>
 <h2 id="引用类型"><a href="#引用类型" class="headerlink" title="引用类型"></a>引用类型</h2><p>引用类型包括类，接口，数组类型，还有特殊的null类型，字符串是一个类，因此也就是一个引用数据类型</p>
 <h2 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h2><p>基本数据类型包括整形(byte,short,int,long,char)，浮点型(float,double)和boolean类型<br>字符型：char2个字节，字符型的值必须使用（’)括起来，Java语言使用16位的Unicode字符集作为编码方式。字符型值也可以采用十六进制编码方式来表示，范围是’\u0000’~’\uFFFF’，一共可以表示65536个字符，其中前256个字符和ASCII码中的字符完全重合。由于计算机底层保存字符时，实际保存的是该字符对应的编码，因此char类型的值也可以直接作为整形值来使用，他相当于16位无符号的整数，表示范围是0~65535.<br>浮点型：默认为double类型，如果希望Java把一个浮点类型保存为float，则应该在这个浮点数后面加上f或者F。</p>
@@ -1483,7 +1606,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
