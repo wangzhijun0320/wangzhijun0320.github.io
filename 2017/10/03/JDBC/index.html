@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="JDBC123456789101112//1加载驱动，使用反射知识class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
+<meta name="description" content="JDBC123456789101112//1加载驱动，使用反射知识Class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JDBC">
 <meta property="og:url" content="http://yoursite.com/2017/10/03/JDBC/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JDBC123456789101112//1加载驱动，使用反射知识class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
+<meta property="og:description" content="JDBC123456789101112//1加载驱动，使用反射知识Class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-03T03:12:08.826Z">
+<meta property="og:updated_time" content="2017-10-03T15:30:44.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDBC">
-<meta name="twitter:description" content="JDBC123456789101112//1加载驱动，使用反射知识class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
+<meta name="twitter:description" content="JDBC123456789101112//1加载驱动，使用反射知识Class.forName(&quot;com.mysql.jdbc.Driver&quot;);//2使用DriverManager获取数据库连接Connection conn=DriverManager.getConnection(&quot;jdbc:mysql://127.0.0.1:3306/数据库名称&quot;,&quot;用户名成&quot;,&quot;用户密码&quot;);//3使用Con">
 
 
 
@@ -363,7 +363,7 @@
       
 
       
-        <h1 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//1加载驱动，使用反射知识</div><div class="line">class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</div><div class="line">//2使用DriverManager获取数据库连接</div><div class="line">Connection conn=DriverManager.getConnection(<span class="string">"jdbc:mysql://127.0.0.1:3306/数据库名称"</span>,<span class="string">"用户名成"</span>,<span class="string">"用户密码"</span>);</div><div class="line">//3使用Connection来创建一个Statement对象</div><div class="line">Statement <span class="built_in">stat</span>=conn.creatStatement();</div><div class="line">//4执行sql语句</div><div class="line">ResultSet rs=stat.executeQuery(<span class="string">"sql语句"</span>+<span class="string">"sql语句"</span>);</div><div class="line"><span class="keyword">while</span>(rs.next())</div><div class="line">&#123;</div><div class="line">	System.out.println(rs.getInt(1)/re.getString(2));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <h1 id="JDBC"><a href="#JDBC" class="headerlink" title="JDBC"></a>JDBC</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//1加载驱动，使用反射知识</div><div class="line">Class.forName(<span class="string">"com.mysql.jdbc.Driver"</span>);</div><div class="line">//2使用DriverManager获取数据库连接</div><div class="line">Connection conn=DriverManager.getConnection(<span class="string">"jdbc:mysql://127.0.0.1:3306/数据库名称"</span>,<span class="string">"用户名成"</span>,<span class="string">"用户密码"</span>);</div><div class="line">//3使用Connection来创建一个Statement对象</div><div class="line">Statement <span class="built_in">stat</span>=conn.creatStatement();</div><div class="line">//4执行sql语句</div><div class="line">ResultSet rs=stat.executeQuery(<span class="string">"sql语句"</span>+<span class="string">"sql语句"</span>);</div><div class="line"><span class="keyword">while</span>(rs.next())</div><div class="line">&#123;</div><div class="line">	System.out.println(rs.getInt(1)/re.getString(2));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
     
