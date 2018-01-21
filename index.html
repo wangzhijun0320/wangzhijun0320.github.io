@@ -297,6 +297,255 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/20/2018-01-20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/20/2018-01-20/" itemprop="url">2018-01-20</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T10:37:58+08:00">
+                2018-01-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>列是表中的一个字段，所有表都是由一个或者多个列组成的。<br>行是表中的一条记录。<br>SQL(Structured Query Language)结构化查询语言，是一种专门和数据库打交道的语言。</p>
+<h1 id="SQL-1"><a href="#SQL-1" class="headerlink" title="SQL"></a>SQL</h1><h1 id="2-检索数据"><a href="#2-检索数据" class="headerlink" title="2 检索数据"></a>2 检索数据</h1><p>SQL语句不区分大小写。<br>检索不同的值，使用distinct关键字，例：<br>select distinct id<br>form 表明；</p>
+<p>限制结果时候，并非所有的DBMS都一样，当使用Mysql时候，例子：select id<br>form 表明<br>limit 5 offset 5；<br>意思是检索从第五行后的五行数据。//第一个数字是指从哪一个数字开始，第二个数字是指检索的行数。<br>第一个被检索的是第0行。</p>
+<p>注释：<br>1：–<br>2：#<br>2：/<em>     </em>/</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/20/Algorithms01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzj">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/20/Algorithms01/" itemprop="url">Algorithms01</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T10:34:35+08:00">
+                2018-01-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="将数字转化为罗马数字"><a href="#将数字转化为罗马数字" class="headerlink" title="将数字转化为罗马数字"></a>将数字转化为罗马数字</h1><p>Given an integer, convert it to a roman numeral.<br>　　Input is guaranteed to be within the range from 1 to 3999.<br>输入一个数字，将它转成一个罗马数字，输入的数字在[1, 3999]之间。<br>　　罗马数字的表示：<br>　　个位数举例： (I, 1) (II, 2) (III, 3) (IV, 4) (V, 5) (VI, 6) (VII, 7) (VIII, 8) (IX, 9)<br>　　十位数举例：(X, 10) (XI, 11) (XII, 12) (XIII, 13) (XIV, 14) (XV, 15) (XVI, 16) (XVII, 17) (XVIII, 18) (XIX, 19) (XX, 20) (XXI, 21) (XXII, 22) (XXIX, 29) (XXX, 30) (XXXIV, 34) (XXXV, 35) (XXXIX, 39) (XL, 40) (L, 50) (LI, 51) (LV, 55) (LX, 60) (LXV, 65) (LXXX, 80) (XC, 90) (XCIII, 93) (XCV, 95) (XCVIII, 98) (XCIX, 99)<br>　　百位数举例：(C, 100) (CC, 200) (CCC, 300) (CD, 400) (D, 500) (DC, 600) (DCC, 700)(DCCC, 800) (CM, 900) (CMXCIX, 999)<br>千位数举例：(M, 1000) (MC, 1100) (MCD, 1400) (MD, 1500) (MDC, 1600) (MDCLXVI, 1666) (MDCCCLXXXVIII, 1888) (MDCCCXCIX, 1899) (MCM, 1900) (MCMLXXVI, 1976) (MCMLXXXIV, 1984) (MCMXC, 1990) (MM, 2000) (MMMCMXCIX, 3999)<br>解题思路：<br>创建一个二维数组保存每一个数位上的1~9的数位写法，对数字进行求余求商操作，从低位开始计算每一个数位的字符，直到最后的结果</p>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><p>public String solution(int num){<br>    String result = “”;<br>    String[][] luoma = {<br>    {“I”, “II”, “III”, “IV”, “V”, “VI”, “VII”, “VIII”, “IX”}, // 个位的表示<br>                {“X”, “XX”, “XXX”, “XL”, “L”, “LX”, “LXX”, “LXXX”, “XC”}, // 十位的表示<br>                {“C”, “CC”, “CCC”, “CD”, “D”, “DC”, “DCC”, “DCCC”, “CM”}, // 百倍的表示<br>                {“M”, “MM”, “MMM”, “”, “”, “”, “”, “”, “”}// 千位的表示</p>
+<p>};<br>    for (int i = 0; num != 0; num /= 10,i++) {<br>    //如果不为0,说明这个数位上有值，要进行相加操作<br>        if (num % 10 != 0) {<br>        result = luoma[i][num % 10 - 1] + result;</p>
+<pre><code>}
+</code></pre><p>}<br>    return result;</p>
+<p>}</p>
+<p>}</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/16/Algorithms/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1321,268 +1570,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/27/JAVA-study-node4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wzj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/27/JAVA-study-node4/" itemprop="url">JAVA study node4</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-27T21:01:57+08:00">
-                2017-08-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Chapter5对象封装"><a href="#Chapter5对象封装" class="headerlink" title="Chapter5对象封装"></a>Chapter5对象封装</h1><h2 id="5-1何为封装"><a href="#5-1何为封装" class="headerlink" title="5.1何为封装"></a>5.1何为封装</h2><h3 id="5-1-1封装对象初始流程"><a href="#5-1-1封装对象初始流程" class="headerlink" title="5.1.1封装对象初始流程"></a>5.1.1封装对象初始流程</h3><p>如果想存取对象的数据成员，可以通过“.”运算符加上数据成员名称。（在程序中出现重复的流程，往往意味着有改进的空间）<br>在对象数据成员前面加上this关键字，表明将参数指定给这个对象（this）的数据成员。</p>
-<h3 id="5-1-2封装对象操作流程"><a href="#5-1-2封装对象操作流程" class="headerlink" title="5.1.2封装对象操作流程"></a>5.1.2封装对象操作流程</h3><p>在类中定义的方法，如果不用返回值，方法名前面可以声明为void。<br>前面的重复流程，现在都封装到方法中，这么做的好处事使用时简单。</p>
-<h3 id="5-1-3封装对象内部数据"><a href="#5-1-3封装对象内部数据" class="headerlink" title="5.1.3封装对象内部数据"></a>5.1.3封装对象内部数据</h3><p>如果不想让用户看到的数据成员，可以用private声明，并提供取值方法。封装的目的主要是隐蔽对象细节，将对象当作黑箱进行操作。</p>
-<h2 id="5-2类语法细节"><a href="#5-2类语法细节" class="headerlink" title="5.2类语法细节"></a>5.2类语法细节</h2><h3 id="5-2-1public-权限修饰"><a href="#5-2-1public-权限修饰" class="headerlink" title="5.2.1public 权限修饰"></a>5.2.1public 权限修饰</h3><p>如果想要其他包的类的类程序代码中存取某包的类或对象成员，则该类或对象成员必须是公开成员，在Java中要使用public加以声明。<br>可以把类声明为public，这表明它是一个公开类，可以在其他包的类中使用。<br>可以在构造函数上声明为public，这表示其他包中的类可以直接调用这个方法。<br>可以在方法上声明public，这表示其他包中的方法中可以直接调用这个方法。</p>
-<h3 id="5-2-2关于构造函数"><a href="#5-2-2关于构造函数" class="headerlink" title="5.2.2关于构造函数"></a>5.2.2关于构造函数</h3><p>创建对象时，数据成员就会初始化。<br>只有编译程序自动加入的构造函数名，才称为默认的构造函数，如果自行撰写无参数，没有内容的构造函数，就不称为默认的构造函数了。</p>
-<h3 id="5-2-3构造函数与方法重载"><a href="#5-2-3构造函数与方法重载" class="headerlink" title="5.2.3构造函数与方法重载"></a>5.2.3构造函数与方法重载</h3><p>可以定义多个构造函数，只要参数类型或个数不同，这称为重载构造函数。定义方法时也可以进行重载，可以类似功能的方法提供同一名称，但是根据参数类型和个数的不同调用对象的方法。<br>返回值类型不可作为方法重载依据，编译程序时会出错。</p>
-<p>###5.2.4使用this<br>除了被声明为static的地方外，this关键字可以出现在类中的任何地方。在Java中，this()代表了调用另一个已经定义的构造方法。<br>在创建对象之后，调用构造函数之前，若有想执行的流程，可以使用{}定义。<br>final关键字，如果局部变量声明了final，表示设置后就不能再变动，但是如果没有明确使用=指定值，那么表示延迟对象成员值得指定，在构造函数执行流程中，一定要对该数据成员指定值得动作，否则将编译错误。</p>
-<h3 id="5-2-5-static类成员"><a href="#5-2-5-static类成员" class="headerlink" title="5.2.5 static类成员"></a>5.2.5 static类成员</h3><p>被声明为static的成员，是将类名称作为命名空间。也就是说，可以用类名.成员来获取成语。所以根据习惯，首字母大写就是类，类名称加上“.”运算符直接调用的就是static成员。<br>由于static成员属于类，而非个别对象，所以在static成员中使用this会是一种语义上的错误。<br>在static方法或者区域块中，可以使用static数据成员或方法成员。<br>如果有些动作想在位码加载后执行，则可以定义static区块。</p>
-<h3 id="5-2-6不定长度自变量"><a href="#5-2-6不定长度自变量" class="headerlink" title="5.2.6不定长度自变量"></a>5.2.6不定长度自变量</h3><p>声明参数列是要在类型关键字后加上…。使用不定长度自变量时，方法上声明的不定长度参数必须是参数列的最后一个。<br>使用两个以上不定长度自变量也是不合法的。</p>
-<h3 id="5-2-7内部类"><a href="#5-2-7内部类" class="headerlink" title="5.2.7内部类"></a>5.2.7内部类</h3><p>可以在类中定义类，这称为内部类。要使用内部类时，必须先建立外部类的实例。</p>
-<h3 id="5-2-8传值调用"><a href="#5-2-8传值调用" class="headerlink" title="5.2.8传值调用"></a>5.2.8传值调用</h3><p>Java当中只有传值调用。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/25/JAVA-study-nodes3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wzj">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/25/JAVA-study-nodes3/" itemprop="url">JAVA study nodes3</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-25T22:09:29+08:00">
-                2017-08-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Chapter4认识对象"><a href="#Chapter4认识对象" class="headerlink" title="Chapter4认识对象"></a>Chapter4认识对象</h1><h2 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h2><h3 id="4-1-1定义类"><a href="#4-1-1定义类" class="headerlink" title="4.1.1定义类"></a>4.1.1定义类</h3><pre><code>例子：类名  text=new  类名（）；【有图有真相】
-</code></pre><p>只有有一个类定义，编译程序就是产生一个.class文件。<br>如果想在建立对象时，一并进行某个初始流程，像是指定数据成员值，则可以定义构造函数。</p>
-<h3 id="4-1-2使用标准类"><a href="#4-1-2使用标准类" class="headerlink" title="4.1.2使用标准类"></a>4.1.2使用标准类</h3><p>1  使用java.util.Scanner<br>如果直接取得上一个字符串（以空格或换行分隔），则使用next()；如果想取得用户输入的正行文字，则使用nextLine()（以换行分割）<br>2  使用java.math.BigDecimal<br>Java遵从IEEE754浮点数运算规范，使用分数与指数来表示浮点数。由于浮点数误差的关系，就要小心浮点数，不要用==直接比较浮点数的运算结果。<br>怎么解决这种问题，可以使用java.util.BigDecimal。这个类还提供了plus()，substract(),multiply(),divids()等方法。</p>
-<h3 id="4-1-3-对象指定与相等性"><a href="#4-1-3-对象指定与相等性" class="headerlink" title="4.1.3 对象指定与相等性"></a>4.1.3 对象指定与相等性</h3><p>Java并非完全的面向对象的程序语言，在Java中有两大类型系统，基本类型和类类型。<br>如果在操作对象，=是用在指定参考名称参考某个对象，而==是用在比较两个参考名称是否参考用一个对象。通俗的说就是，=是用在将某个名牌绑定到某个对象，而==是用在比较两个名牌是否绑定到了同一个对象。【.equals()可以自行定义如何比较两个对象的内含值】</p>
-<h2 id="4-2基本类型打包器"><a href="#4-2基本类型打包器" class="headerlink" title="4.2基本类型打包器"></a>4.2基本类型打包器</h2><h3 id="4-2-1打包基本类型"><a href="#4-2-1打包基本类型" class="headerlink" title="4.2.1打包基本类型"></a>4.2.1打包基本类型</h3><p>Long、Integer、Double、Float、Boolean等类都是所谓的打包器，正如此名称所示，这些类主要目的就是提供对象实例座位“壳”，将基本类型打包在对象之中，这样就可以操作这个对象。<br>如果要使用Integer打包int类型数据，方法之一就是使用new创建Integer实例时，传入int类型数据。</p>
-<h3 id="4-2-2自动装箱、拆箱"><a href="#4-2-2自动装箱、拆箱" class="headerlink" title="4.2.2自动装箱、拆箱"></a>4.2.2自动装箱、拆箱</h3><p>除了使用new关键字创建基本类型打包器外，从j2SE5.0之后提供了自动装箱和自动拆箱功能，可以这样打包基本类型：Integer num=10;//自动装箱  int foo=num;//自动拆箱。</p>
-<h3 id="4-2-3-自动装箱，自动拆箱的内幕"><a href="#4-2-3-自动装箱，自动拆箱的内幕" class="headerlink" title="4.2.3 自动装箱，自动拆箱的内幕"></a>4.2.3 自动装箱，自动拆箱的内幕</h3><p>自动装箱和自动拆箱实际上是编译程序蜜糖，Integer num=100;编译程序会自动将程序代码展开为：Integer localInteger=Integer.valueOf(100);valueof()的操作数在-128~127中间。所以当Integer i1=200;Integer i2=200;时，i1和i2不会参考同一个实例，所以用==比较就会显示false。用.equals()比较内容是否相等。</p>
-<h2 id="4-3数组对象"><a href="#4-3数组对象" class="headerlink" title="4.3数组对象"></a>4.3数组对象</h2><h3 id="4-3-1数组基础"><a href="#4-3-1数组基础" class="headerlink" title="4.3.1数组基础"></a>4.3.1数组基础</h3><p>数组在Java中就是对象。</p>
-<h3 id="4-3-2操作数组对象"><a href="#4-3-2操作数组对象" class="headerlink" title="4.3.2操作数组对象"></a>4.3.2操作数组对象</h3><p>int[] scores=new int[10];在Java中看到new，一定是建立对象，这个语法代表了数组就是对象。每个数据类型的数组元素都有初始值，如果默认的初始值不符合你的要求，则可以通过java.util.Arrays的fill()方法来设定数组的元素值。<br>如果想在new数组中一并指定初始值，则可以不必指定数组长度，int[] scores=new int[]{45,234,24,34,32};<br>数组既然是对象，对象时根据类而建立的实例，代表建立数组对象定义在哪儿？ 答案是由JVM动态产生。<br>类类型建立的数组：Integer scores=new Integer[3];那么这个程序片段建立了几个Integer对象呢？是0个。因为如果是类类型，这个片段的写法建立的数组，每个索引都是参考至null。</p>
-<h3 id="4-3-3数组复制"><a href="#4-3-3数组复制" class="headerlink" title="4.3.3数组复制"></a>4.3.3数组复制</h3><p>如果想进行数组复制，基本做法就是另行建立新数组，使用System.arraycopy()方法，有五个参数，分别是来源数组、来源起始索引、目标数组、目标起始索引、复制长度。还可以使用Arrays.copyOf()方法，这个方法有两个参数，分别是目标对象，目标对象长度。</p>
-<h2 id="4-4字符串对象"><a href="#4-4字符串对象" class="headerlink" title="4.4字符串对象"></a>4.4字符串对象</h2><h3 id="4-4-1字符串基础"><a href="#4-4-1字符串基础" class="headerlink" title="4.4.1字符串基础"></a>4.4.1字符串基础</h3><p>如果有一个char[]数组，也可以使用new来创建String实例，例如：<br>char[] cs={‘h’,’e’,’l’,’l’,’o’};<br>String name=new String(cs);<br>如果有必要，也可以使用String的toCharArray()方法，将字符串以char[]数组返回。<br>char[] cs2=name.toCharArray();<br>如果要将字符串转换为整数，浮点数等基本类型，可以使用打包类提供的剖析方法。</p>
-<h3 id="4-4-2字符串特性"><a href="#4-4-2字符串特性" class="headerlink" title="4.4.2字符串特性"></a>4.4.2字符串特性</h3><p>以“”包含的字符串，只要内容相同，无论在程序代码中出现几次，JVM都只会建立一个String实例，并在字符串池中维护。</p>
-<h3 id="4-4-3字符串编码"><a href="#4-4-3字符串编码" class="headerlink" title="4.4.3字符串编码"></a>4.4.3字符串编码</h3><p>在windows默认的纯文本编辑器，应该是GB2312编码。在eclipse中建立.java原始码，在eclipse运行在简体中文windows中，默认应该是GB2312编码。然而写下的字符串在JVM中会是Unicode。</p>
-<h2 id="4-5-查询java-api文件"><a href="#4-5-查询java-api文件" class="headerlink" title="4.5 查询java api文件"></a>4.5 查询java api文件</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1633,7 +1620,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">17</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
