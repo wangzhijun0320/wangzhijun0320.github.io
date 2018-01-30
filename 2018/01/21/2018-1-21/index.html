@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="URL URL :Uniform Resource Locator统一资源定位符代表资源的地址信息&amp;lt;协议&amp;gt;//&amp;lt;主机&amp;gt;:&amp;lt;端口&amp;gt;/&amp;lt;路径&amp;gt; 三个数的和给定包含n个整数数组S，找到S中的三个整数，从而使之和最接近给定的数。返回三个整数的总和。你可以假设每个输入将有一个确切的解决 SQL3,排序检索数据select idfrom productsorde">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-21T13:19:34.551Z">
+<meta property="og:updated_time" content="2018-01-29T03:52:38.642Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-1-21">
 <meta name="twitter:description" content="URL URL :Uniform Resource Locator统一资源定位符代表资源的地址信息&amp;lt;协议&amp;gt;//&amp;lt;主机&amp;gt;:&amp;lt;端口&amp;gt;/&amp;lt;路径&amp;gt; 三个数的和给定包含n个整数数组S，找到S中的三个整数，从而使之和最接近给定的数。返回三个整数的总和。你可以假设每个输入将有一个确切的解决 SQL3,排序检索数据select idfrom productsorde">
@@ -368,6 +368,14 @@
 <h1 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h1><h1 id="3-排序检索数据"><a href="#3-排序检索数据" class="headerlink" title="3,排序检索数据"></a>3,排序检索数据</h1><p>select id<br>from products<br>order by pro_price,pro_name;<br>除了能用列名指出排序顺序外，order by还可以支持相对列位置进行排序。</p>
 <h2 id="指定排序方向-DESC-降序"><a href="#指定排序方向-DESC-降序" class="headerlink" title="指定排序方向(DESC 降序)"></a>指定排序方向(DESC 降序)</h2><p>如果没写就是按照升序，还可以降序</p>
 <p>select id,pro_price,pro_name<br>from products<br>order by pro_price DESC,pro_name;</p>
+<h1 id="4-过滤数据"><a href="#4-过滤数据" class="headerlink" title="4,过滤数据"></a>4,过滤数据</h1><p>在同时使用order by语句和where语句时候，应该先使用where语句<br>where子句操作符，&lt;&gt;:不等于，=:等于，！=：不等于。。。。。。</p>
+<h1 id="5-高级数据过滤"><a href="#5-高级数据过滤" class="headerlink" title="5 高级数据过滤"></a>5 高级数据过滤</h1><h2 id="AND操作符"><a href="#AND操作符" class="headerlink" title="AND操作符"></a>AND操作符</h2><p>selece prod_id,prod_price,price_name<br>form products<br>where vend_id=”jdfh” AND prod_price &lt;=4;</p>
+<h2 id="OR操作符"><a href="#OR操作符" class="headerlink" title="OR操作符"></a>OR操作符</h2><p>提示：在 提示：在WHERE子句中使用圆括号 子句中使用圆括号 任何时候使用具有AND和OR操作符的WHERE子句，都应该使用圆括号明确地分组操作符。不要过分依赖默认求值顺序，即使它确实如你希 望的那样。使用圆括号没有什么坏处，它能消除歧义。</p>
+<p>WHERE子句可以包含任意数目的AND和OR操作符。允许两者结合以进行复杂、高级的过滤。<br>但是，组合AND和OR会带来了一个有趣的问题。<br>select prod_name,prod_price<br>form products<br>where(vend_id=’dkfh’ OR vend_id=’djf’)<br>AND prod_price=10;</p>
+<h2 id="IN操作符"><a href="#IN操作符" class="headerlink" title="IN操作符"></a>IN操作符</h2><p>select prod_name,prod_price<br>from products<br>where vend_id IN(‘dfn’,’dgj’,’dfnk’)<br>order by prod_name;<br>In操作符和OR操作符完成了一样的事情</p>
+<h1 id="66666用通配符进行过滤"><a href="#66666用通配符进行过滤" class="headerlink" title="66666用通配符进行过滤"></a>66666用通配符进行过滤</h1><h2 id="通配符"><a href="#通配符" class="headerlink" title="%通配符"></a>%通配符</h2><p>通配符：用来匹配值的一部分的特殊字符<br>在搜索串中，%表示任何字符出现的任意次数<br>通配符%看起来可以匹配任意东西，但是有一个例外就是NULL.<br>select prod_name<br>form products<br>where por_name like ‘fish%’;</p>
+<h2 id="通配符-1"><a href="#通配符-1" class="headerlink" title="_通配符"></a>_通配符</h2><p>与%能匹配0个字符不同，_总是刚好匹配一个字符，不能多也不能少。</p>
+<h2 id="通配符-2"><a href="#通配符-2" class="headerlink" title="[] 通配符"></a>[] 通配符</h2><p>匹配以JM开头的名字<br>select pro_name<br>form products<br>where pro_name like ‘[JM]%’<br>order by cust_contact;<br>此通配符可以用前缀字符^来否定，<br>where pro_name like ‘[^JM]’;<br><strong>*</strong>不同的DBMS使用的通配符也不一样</p>
 
       
     </div>
@@ -401,6 +409,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/01/24/2018-1-24/" rel="prev" title="2018-1-24">
+                2018-1-24 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -477,7 +489,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -516,7 +528,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#URL"><span class="nav-number">1.</span> <span class="nav-text">URL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三个数的和"><span class="nav-number">2.</span> <span class="nav-text">三个数的和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL"><span class="nav-number">3.</span> <span class="nav-text">SQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-排序检索数据"><span class="nav-number">4.</span> <span class="nav-text">3,排序检索数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定排序方向-DESC-降序"><span class="nav-number">4.1.</span> <span class="nav-text">指定排序方向(DESC 降序)</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#URL"><span class="nav-number">1.</span> <span class="nav-text">URL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三个数的和"><span class="nav-number">2.</span> <span class="nav-text">三个数的和</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL"><span class="nav-number">3.</span> <span class="nav-text">SQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-排序检索数据"><span class="nav-number">4.</span> <span class="nav-text">3,排序检索数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定排序方向-DESC-降序"><span class="nav-number">4.1.</span> <span class="nav-text">指定排序方向(DESC 降序)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-过滤数据"><span class="nav-number">5.</span> <span class="nav-text">4,过滤数据</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-高级数据过滤"><span class="nav-number">6.</span> <span class="nav-text">5 高级数据过滤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AND操作符"><span class="nav-number">6.1.</span> <span class="nav-text">AND操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OR操作符"><span class="nav-number">6.2.</span> <span class="nav-text">OR操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IN操作符"><span class="nav-number">6.3.</span> <span class="nav-text">IN操作符</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#66666用通配符进行过滤"><span class="nav-number">7.</span> <span class="nav-text">66666用通配符进行过滤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符"><span class="nav-number">7.1.</span> <span class="nav-text">%通配符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符-1"><span class="nav-number">7.2.</span> <span class="nav-text">_通配符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通配符-2"><span class="nav-number">7.3.</span> <span class="nav-text">[] 通配符</span></a></li></ol></li></ol></div>
             
 
           </div>
